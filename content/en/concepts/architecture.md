@@ -153,7 +153,7 @@ be interested in the journey of OCM:
 
 ### Registration
 
-The core module of OCM managing the lifecycle of the managed clusters. The
+The core module of OCM manages the lifecycle of the managed clusters. The
 registration controller in the hub cluster can be intuitively compared to a 
 broker that represents and manages the hub cluster in terms of cluster 
 registration, while the registration agent working in the managed cluster
@@ -175,7 +175,7 @@ clusters via the labels or the cluster-claims. The placement module is
 completely decoupled from the execution, the output from placement will
 be merely a list of names of the matched clusters in the `PlacementDecision`
 API, so the consumer controller of the decision output can reactively 
-discovery the topology or availability change from the managed clusters by
+discover the topology or availability change from the managed clusters by
 simply list-watching the decision API.
 
 
